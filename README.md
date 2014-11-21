@@ -19,19 +19,21 @@ Switch to the Stamp Album Generator tool
 2. in the "Output Folder" choose a generation folder (it could be where you copied the xml files to - it just needs to be writable)
 3. click "Generate" button.  
 
-(/images/click-generate.png)
+<img src="images/click-generate.png"></img>
 
 You should get an error like this:
 
-(/images/No-page-error.png)
+<img src="images/No-page-error.png"></img>
 
 This means you are ready to author your first page.  Notice the "Open ..." button is disabled (this is because the PDF does not exist).
 
 4. Switch to the text error (using ALT-TAB or other method) and between the <album> </album> tags add a <page> tag with a title attribute like this:
 
-	<page title="My First Page">
+```XML
+	&lt;page title="My First Page"&gt;
 	
-	</page>
+	&lt;/page&gt;
+```
 
 5. Save the file in the editor and switch back to the Stamp Album Generator and click "Generate...".  
 6. Now the "Open..." button should be enabled.  Click it (Note: This requires you to have a valid PDF reader installed and configured for your system like Adobe PDF Reader) - the Album should open up, have a single page that says "My First Page" in ALL CAPS.  
