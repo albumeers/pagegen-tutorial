@@ -94,11 +94,75 @@ Lets add three boxes to the stamp-row as follows:
   </set>
 ```
 
+The first stamp in this case is measuring 37mm x 26mm and has the color "Bluish Violet and Reddish Purple".  If the text is too wide to fit in the box it will attempt to wrap it.  For this reason the escape character \n might be used to provide a cleaner formatting.
+
 7. Save the file and switch back to the Album Generator Tool and hit Generate (make sure the PDF is not open).  Open the PDF if successful and look at the output.  You should see something like this:
 
 <img src="images/Japan-firstrow.png" width="500px"></img>
 
+8. Lets now add another row and a stamp.  You could add the stamp in the current row and generate it, but what you'll find is that it is straddling the margins (if you click the "Render Borders" you'll see what I mean).  So we'll add another row and place the stamp.  
+
+_NOTE_ One nice aspect to the XML approach is it is easy to move stamps between rows.... cut and paste!  One trick is to add all your stamps to one row and then and additional rows and move the stamps down to create the layout you want.
+
+Add the following two rows below the row-set and within the current set:
+
+```XML
+	<row-set>
+        <s>"37 26" "30y" "Deep Green and Yellow-Green" "" "670 (801)"</s>
+    </row-set>
+    <row-set description="Imperforate">
+        <s>"127 88" "" "Sheet of Two" "" "668a (MS802)"</s>
+    </row-set>
+``` 
+
+This should result in a page layout like the following:
+
+```XML
+	<page title="Japan">
+		<set issue="1959" description="Wedding of Crown Prince Akihito and Princess Michiko">
+            <row-set description="Perforated 13½">
+                <s>"37 26" "5y" "Bluish Violet and Reddish Purple" "" "667 (798)"</s>
+                <s>"37 26" "10y" "Maroon and Brown" "" "668 (799)"</s>
+                <s>"37 26" "20y" "Sepia and Orange-Brown" "" "669 (800)"</s>
+            </row-set>
+            <row-set>
+                <s>"37 26" "30y" "Deep Green and Yellow-Green" "" "670 (801)"</s>
+            </row-set>
+            <row-set description="Imperforate">
+                <s>"127 88" "" "Sheet of 2" "" "668a (MS802)"</s>
+            </row-set>
+        </set>
+	</page>
+```
+
+Generate this page to see the completed page.  
+
+Congratulations!  You have just created your first actual album page complete with spaces for 4 stamps, a souvenir sheet all in 3 rows.
 
 
+Creating Multiple Sets on a single line
+---------------------------------------
+
+_In this tutorial you will create a page that contains two stamp sets on a single line centered on the page._
+_Coming soon_ - check out the [DTD](http://www.drakeserver.com/dtds/pagegen.dtd) and the tutorial-complete.xml file in your text editor for the solution.
 
 
+Creating Back-of-the-Book stamps with diamond shaped stamps
+-----------------------------------------------------------
+
+_In this tutorial you will create a page for Semi-Postal stamps of Japan and define stamps that are diamonds._
+_Coming soon_ - check out the [DTD](http://www.drakeserver.com/dtds/pagegen.dtd) and the tutorial-complete.xml file in your text editor for the solution.
+
+
+Creating a Set-Tentant Pair of stamps
+-------------------------------------
+
+_In this tutorial you will create a set of stamps made up of a set-tenant pair._
+_Coming soon_ - check out the [DTD](http://www.drakeserver.com/dtds/pagegen.dtd) and the tutorial-complete.xml file in your text editor for the solution.
+
+
+Creating a Title Page with a content list
+-----------------------------------------
+
+_In this tutorial you will create a title page that contains a list of the contents in the album_
+_Coming soon_ - check out the [DTD](http://www.drakeserver.com/dtds/pagegen.dtd) and the tutorial-complete.xml file in your text editor for the solution.
