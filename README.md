@@ -81,16 +81,16 @@ Now we are going to create a set of stamps.  The &lt;set&gt; are the children (o
    * The second set of "" represents the rate/denomination.  A blank line will be added after it automatically.  Examples include "1c" or "£5"
    * The third set of "" represents the primary description.  This is used to describe the color of the stamp such as "Red and Green".  For modern stamps with many colors, "Multicolored" is used.
    * The fourth set of "" is often empty on early stamps unless it is calling out a specific feature eg. "(Thick Paper)".  For modern stamps it is used to describe the stamp in brackets "(Pugg Dog)".  This descriptor gets a unique font declaration and is often italicized.  Text generally should be included in parenthesis ().  On earlier issues this is often used to call out a specific variant where a unique row-set is not desired.
-   * The fifth set of "" is used for catalogue numbers.  Typically the common number is shown first followed optionally by a more specialized number. In the example below, "667" is refering to a _catalogue not named_ #667 and (798) represents Stanley Gibbons #798 
+   * The fifth set of "" is used for numbers.  Typically the common number is shown first followed optionally by a more specialized number. In the example below, "900" is refering to a _catalogue not named_ #900 and (798) represents _another catalogue_ #798 
 
 Lets add three boxes to the stamp-row as follows:
 
 ```XML  
   <set issue="1959" descripton="Wedding of Crown Prince Akihito and Princess Michiko">
 	<row-set description="Perforated 13½">
-		<s>"37 26" "5y" "Bluish Violet and Reddish Purple" "" "667 (798)"</s>
-        <s>"37 26" "10y" "Maroon and Brown" "" "668 (799)"</s>
-        <s>"37 26" "20y" "Sepia and Orange-Brown" "" "669 (800)"</s>
+		<s>"37 26" "5y" "Bluish Violet and Reddish Purple" "" "900 (798)"</s>
+        <s>"37 26" "10y" "Maroon and Brown" "" "901 (799)"</s>
+        <s>"37 26" "20y" "Sepia and Orange-Brown" "" "902 (800)"</s>
 	</row-set>
   </set>
 ```
@@ -112,7 +112,7 @@ Add the following two rows below the row-set and within the current set:
         <s>"37 26" "30y" "Deep Green and Yellow-Green" "" "670 (801)"</s>
     </row-set>
     <row-set description="Imperforate">
-        <s>"127 88" "" "Sheet of Two" "" "668a (MS802)"</s>
+        <s>"127 88" "" "Sheet of Two" "" "901a (MS802)"</s>
     </row-set>
 ``` 
 
@@ -122,15 +122,15 @@ This should result in a page layout like the following:
 	<page title="Japan">
 		<set issue="1959" description="Wedding of Crown Prince Akihito and Princess Michiko">
             <row-set description="Perforated 13½">
-                <s>"37 26" "5y" "Bluish Violet and Reddish Purple" "" "667 (798)"</s>
-                <s>"37 26" "10y" "Maroon and Brown" "" "668 (799)"</s>
-                <s>"37 26" "20y" "Sepia and Orange-Brown" "" "669 (800)"</s>
+                <s>"37 26" "5y" "Bluish Violet and Reddish Purple" "" "900 (798)"</s>
+                <s>"37 26" "10y" "Maroon and Brown" "" "901 (799)"</s>
+                <s>"37 26" "20y" "Sepia and Orange-Brown" "" "902 (800)"</s>
             </row-set>
             <row-set>
                 <s>"37 26" "30y" "Deep Green and Yellow-Green" "" "670 (801)"</s>
             </row-set>
             <row-set description="Imperforate">
-                <s>"127 88" "" "Sheet of 2" "" "668a (MS802)"</s>
+                <s>"127 88" "" "Sheet of 2" "" "901a (MS802)"</s>
             </row-set>
         </set>
 	</page>
@@ -154,12 +154,12 @@ _Coming soon_ - check out the [DTD](http://www.drakeserver.com/dtds/pagegen.dtd)
         <column-set issue="1958" spacing="low">
             <set description="Opening of Kan-Mon Undersea Tunnel">
                 <row-set>
-                    <s>"44 26" "10y" "Pink, Blue and Drab" "(Kan-Mon Tunnel)" "645 (775)"</s>
+                    <s>"44 26" "10y" "Pink, Blue and Drab" "(Kan-Mon Tunnel)" "850 (775)"</s>
                 </row-set>
             </set>
             <set description="Centenary of Opening of Ports to Traders">
                 <row-set>
-                    <s>"37 26" "10y" "Carmine and Deep Turquoise-Blue" "(Statue of Li Naosuke)" "647 (777)"</s>
+                    <s>"37 26" "10y" "Carmine and Deep Turquoise-Blue" "(Statue of Li Naosuke)" "851 (777)"</s>
                 </row-set>
             </set>
         </column-set>
@@ -179,9 +179,9 @@ _Coming soon_ - check out the [DTD](http://www.drakeserver.com/dtds/pagegen.dtd)
 	<page title="Japan" classifier="Semi-postal Stamps">
         <set issue="1961" description="Tokyo Olympic Games">
             <row-set description="First Issue">
-                <s shape="diamond">"42 42" "5y + 5y" "Yellow-Brown" "(Throwing Javelin)" "B12 (879)"</s>
-                <s shape="diamond">"42 42" "5y + 5y" "Deep Green" "(Wresting)" "B13 (880)"</s>
-                <s shape="diamond">"42 42" "5y + 5y" "Carmine" "(Woman Diver)" "B14 (881)"</s>
+                <s shape="diamond">"42 42" "5y + 5y" "Yellow-Brown" "(Throwing Javelin)" "S12 (879)"</s>
+                <s shape="diamond">"42 42" "5y + 5y" "Deep Green" "(Wresting)" "S13 (880)"</s>
+                <s shape="diamond">"42 42" "5y + 5y" "Carmine" "(Woman Diver)" "S14 (881)"</s>
             </row-set>
         </set>
 	</page>
