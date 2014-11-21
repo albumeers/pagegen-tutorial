@@ -29,7 +29,7 @@ You should get an error like this:
 
 This means you are ready to author your first page.  Notice the "Open ..." button is disabled (this is because the PDF does not exist).
 
-4. Switch to the text editor (using ALT-TAB or other method) and between the <album> </album> tags add a <page> tag with a title attribute like this:
+4. Switch to the text editor (using ALT-TAB or other method) and between the <album> </album> tags add a <page> tag pair with a title attribute like this:
 
 ```XML
 	<page title="My First Page">
@@ -38,7 +38,7 @@ This means you are ready to author your first page.  Notice the "Open ..." butto
 ```
 
 5. Save the file in the editor and switch back to the Stamp Album Generator and click "Generate...".  
-6. Now the "Open..." button should be enabled.  Click it (Note: This requires you to have a valid PDF reader installed and configured for your system like Adobe PDF Reader) - the Album should open up, have a single page that says "My First Page".
+6. Now the "Open..." button should be enabled.  Click it (Note: This requires you to have a valid PDF reader installed and configured for your system like Adobe PDF Reader) - the Album should open up, have a single page that says "My First Page".  
 
 _Some Obversations_
 * Notice the title is in ALL CAPS. This is simply part of the definition/generation and it is converting it to upper case.
@@ -50,14 +50,15 @@ Creating a Set of Stamps
 In this tutorial we will add to the current file and add another page that contains a set of four stamps and a souvenir sheet.  
 
 To begin switch back to the text editor
-1. Add a new page similiar to what you did previously directly after the &lt;/page&gt; tag on a new line.  Set the name to "Japan"
+1. Add a new page similiar to what you did previously directly after the &lt;/page&gt; tag pair on a new line.  Set the name to "Japan"
 2. Write the closing page tag &lt;/page&gt; on a new line and add a blank line between them. 
 
-*HINT* This is a good practice.  Create your start and ending tags first then fill in the content.  Also try and use TABs to intend your document at each level of the structure.  It makes it easier to read.
+*HINT* 
+_This is a good practice.  Create your start and ending tags first then fill in the content.  Also try and use TABs to indent your document at each level of the structure.  It makes it easier to read._
 
 Now we are going to create a set of stamps.  The &lt;set&gt; are the children (one of) a &lt;page&gt; element.  Sets have a series of optional attributes and children elements that we will define in this step.
 
-3. Create a &lt;set&gt; tag and provide it an issue of "1959" and a description of "Wedding of Crown Prince Akihito and Princess Michiko".  Close the tag on a new line leaving an empty line between (some editors will do this automatically when you hit "ENTER" after typing the &gt; character).  Here is what you should have.
+3. Create a &lt;set&gt; tag and provide it an issue of "1959" and a description of "Wedding of Crown Prince Akihito and Princess Michiko".  Close the tag pair on a new line leaving an empty line between (some editors will do this automatically when you hit "ENTER" after typing the &gt; character).  Here is what you should have.
 
 ```XML
   <set issue="1959" descripton="Wedding of Crown Prince Akihito and Princess Michiko">
@@ -76,11 +77,11 @@ Now we are going to create a set of stamps.  The &lt;set&gt; are the children (o
   </set>
 ```
 
-6. Now we are going to add three stamp boxes.  Boxes are defined using the &lt;s&gt; tag and include a few attributes (such as image and shape).  However for 99% of the stamp boxes they are empty "s" tags with string content.  The content is a little querky to learn (but once learned it is straight forward).  All "s" tags require _five_ sets of "" four of which may or may not have content.  There are as follows:
+6. Now we are going to add three stamp boxes.  Boxes are defined using the &lt;s&gt; tag pair and include a few attributes (such as image and shape).  However for 99% of the stamp boxes they are empty "s" tags with string content.  The content is a little querky to learn (but once learned it is straight forward).  All "s" tags require _five_ sets of "" four of which may or may not have content.  There are as follows:
    * The first set of "" represents the stamp dimensions as "width height".  This is in mm, and is the measurement of the stamp frame + any paper to the perforations.  ie. it is the paper size (not image size).  The system will automatically generate extra width and height to give it a centered appearance and allow for things like stamp mounts.
    * The second set of "" represents the rate/denomination.  A blank line will be added after it automatically.  Examples include "1c" or "£5"
    * The third set of "" represents the primary description.  This is used to describe the color of the stamp such as "Red and Green".  For modern stamps with many colors, "Multicolored" is used.
-   * The fourth set of "" is often empty on early stamps unless it is calling out a specific feature eg. "(Thick Paper)".  For modern stamps it is used to describe the stamp in brackets "(Pugg Dog)".  This descriptor gets a unique font declaration and is often italicized.  Text generally should be included in parenthesis ().  On earlier issues this is often used to call out a specific variant where a unique row-set is not desired.
+   * The fourth set of "" is often empty on early stamps unless it is calling out a specific feature eg. "(Thick Paper)".  For modern stamps it is used to describe the stamp in brackets "(Pugg Dog)".  This descriptor gets a unique font declaration and is often italicized.  Text generally should be included in brackets/parentheses ().  On earlier issues this is often used to call out a specific variant where a unique row-set is not desired.
    * The fifth set of "" is used for numbers.  Typically the common number is shown first followed optionally by a more specialized number. In the example below, "900" is refering to a _catalogue not named_ #900 and (798) represents _another catalogue_ #798 
 
 Lets add three boxes to the stamp-row as follows:
@@ -97,11 +98,11 @@ Lets add three boxes to the stamp-row as follows:
 
 The first stamp in this case is measuring 37mm x 26mm and has the color "Bluish Violet and Reddish Purple".  If the text is too wide to fit in the box it will attempt to wrap it.  For this reason the escape character \n might be used to provide a cleaner formatting.
 
-7. Save the file and switch back to the Album Generator Tool and hit Generate (make sure the PDF is not open).  Open the PDF if successful and look at the output.  You should see something like this:
+7. Save the file and switch back to the Album Generator Tool and hit Generate (_make sure the PDF is not open_).  Open the PDF if successful and look at the output.  You should see something like this:
 
 <img src="images/Japan-firstrow.png" width="500px"></img>
 
-8. Lets now add another row and a stamp.  You could add the stamp in the current row and generate it, but what you'll find is that it is straddling the margins (if you click the "Render Borders" you'll see what I mean).  So we'll add another row and place the stamp.  
+8. Lets now add another row and a stamp.  You could add the stamp in the current row and generate it ((_make sure the PDF is not open_), but what you'll find is that it is straddling the margins (if you click the "Render Borders" you'll see what I mean).  So we'll add another row and place the stamp.  
 
 _NOTE_ One nice aspect to the XML approach is it is easy to move stamps between rows.... cut and paste!  One trick is to add all your stamps to one row and then and additional rows and move the stamps down to create the layout you want.
 
@@ -136,7 +137,7 @@ This should result in a page layout like the following:
 	</page>
 ```
 
-Generate this page to see the completed page.  
+Generate this page to see the completed page (_make sure the PDF is not open_).  
 
 Congratulations!  You have just created your first actual album page complete with spaces for 4 stamps, a souvenir sheet all in 3 rows.
 
