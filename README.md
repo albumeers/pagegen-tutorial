@@ -81,7 +81,7 @@ Now we are going to create a set of stamps.  The &lt;set&gt; are the children (o
    * The second set of "" represents the rate/denomination.  A blank line will be added after it automatically.  Examples include "1c" or "£5"
    * The third set of "" represents the primary description.  This is used to describe the color of the stamp such as "Red and Green".  For modern stamps with many colors, "Multicolored" is used.
    * The fourth set of "" is often empty on early stamps unless it is calling out a specific feature eg. "(Thick Paper)".  For modern stamps it is used to describe the stamp in brackets "(Pugg Dog)".  This descriptor gets a unique font declaration and is often italicized.  Text generally should be included in parenthesis ().  On earlier issues this is often used to call out a specific variant where a unique row-set is not desired.
-   * The fifth set of "" is used for catalogue numbers.  Typically the common number is shown first followed optionally by a more specialized number. In the example below, "667" is refering to Scott #667 and (798) represents Stanley Gibbons #798 
+   * The fifth set of "" is used for catalogue numbers.  Typically the common number is shown first followed optionally by a more specialized number. In the example below, "667" is refering to a _catalogue not named_ #667 and (798) represents Stanley Gibbons #798 
 
 Lets add three boxes to the stamp-row as follows:
 
