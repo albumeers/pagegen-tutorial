@@ -127,10 +127,10 @@ This should result in a page layout like the following:
                 <s>"37 26" "20y" "Sepia and Orange-Brown" "" "902 (800)"</s>
             </row-set>
             <row-set>
-                <s>"37 26" "30y" "Deep Green and Yellow-Green" "" "670 (801)"</s>
+                <s>"37 26" "30y" "Deep Green and Yellow-Green" "" "903 (801)"</s>
             </row-set>
             <row-set description="Imperforate">
-                <s>"127 88" "" "Sheet of 2" "" "901a (MS802)"</s>
+                <s>"127 88" "" "Sheet of 2" "" "903a (802)"</s>
             </row-set>
         </set>
 	</page>
