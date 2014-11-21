@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE album SYSTEM "http://www.drakeserver.com/dtds/pagegen.dtd">
+<album>
+	<page title="Your First Page">
+	</page>
+	
+	<page title="Japan">
+		<set issue="1959" description="Wedding of Crown Prince Akihito and Princess Michiko">
+            <row-set description="Perforated 13½">
+                <s>"37 26" "5y" "Bluish Violet and Reddish Purple" "" "667 (798)"</s>
+                <s>"37 26" "10y" "Maroon and Brown" "" "668 (799)"</s>
+                <s>"37 26" "20y" "Sepia and Orange-Brown" "" "669 (800)"</s>
+            </row-set>
+            <row-set>
+                <s>"37 26" "30y" "Deep Green and Yellow-Green" "" "670 (801)"</s>
+            </row-set>
+            <row-set description="Imperforate">
+                <s>"127 88" "" "Sheet of 2" "" "668a (MS802)"</s>
+            </row-set>
+        </set>
+	</page>
+	
+	<page title="Japan">
+        <column-set issue="1958" spacing="low">
+            <set description="Opening of Kan-Mon Undersea Tunnel">
+                <row-set>
+                    <s>"44 26" "10y" "Pink, Blue and Drab" "(Kan-Mon Tunnel)" "645 (775)"</s>
+                </row-set>
+            </set>
+            <set description="Centenary of Opening of Ports to Traders">
+                <row-set>
+                    <s>"37 26" "10y" "Carmine and Deep Turquoise-Blue" "(Statue of Li Naosuke)" "647 (777)"</s>
+                </row-set>
+            </set>
+        </column-set>
+	</page>
+	
+	<page title="Japan" classifier="Semi-postal Stamps">
+        <set issue="1961" description="Tokyo Olympic Games">
+            <row-set description="First Issue">
+                <s shape="diamond">"42 42" "5y + 5y" "Yellow-Brown" "(Throwing Javelin)" "B12 (879)"</s>
+                <s shape="diamond">"42 42" "5y + 5y" "Deep Green" "(Wresting)" "B13 (880)"</s>
+                <s shape="diamond">"42 42" "5y + 5y" "Carmine" "(Woman Diver)" "B14 (881)"</s>
+            </row-set>
+        </set>
+	</page>
+	
+	<page title="Australia">
+		<column-set>
+			<set issue="1947-52" description="Marriage of Queen Elizabeth II\nPerforated 14x15">
+				<row-set description="Coil Pair">
+					<set-tenant orientation="horizontal">
+						<s>"24 20" "1d" "Purple" "" "222b"</s>
+						<s>"24 20" "1d" "Purple" "" "222b"</s>
+					</set-tenant>
+				</row-set>
+			</set>
+		</column-set>
+	</page>
+	
+	<title-page title="My Collection" description="Optionally describe the area">
+		<content-items>
+			<item>Listing of album sections</item>
+			<item>Imperial Japan (1867-1947)</item>
+		</content-items>
+	</title-page>
+</album>
