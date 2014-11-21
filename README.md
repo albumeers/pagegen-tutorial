@@ -17,6 +17,7 @@ Authoring Your First Page
 -------------------------
  
 Switch to the Stamp Album Generator tool 
+
 1. in the "Input File" select the "starter-template.xml" from the folder you selected.
 2. in the "Output Folder" choose a generation folder (it could be where you copied the xml files to - it just needs to be writable)
 3. click "Generate" button.  
@@ -56,7 +57,6 @@ To begin switch back to the text editor
 
 
 <b>HINT</b>
-
 <i>This is a good practice.  Create your start and ending tags first then fill in the content.  Also try and use TABs to indent your document at each level of the structure.  It makes it easier to read.</i>
 
 Now we are going to create a set of stamps.  The &lt;set&gt; are the children (one of) a &lt;page&gt; element.  Sets have a series of optional attributes and children elements that we will define in this step.
