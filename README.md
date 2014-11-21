@@ -40,7 +40,7 @@ This means you are ready to author your first page.  Notice the "Open ..." butto
 5. Save the file in the editor and switch back to the Stamp Album Generator and click "Generate...".  
 6. Now the "Open..." button should be enabled.  Click it (Note: This requires you to have a valid PDF reader installed and configured for your system like Adobe PDF Reader) - the Album should open up, have a single page that says "My First Page".  
 
-_Some Obversations_
+<i>Some Obversations</i>
 * Notice the title is in ALL CAPS. This is simply part of the definition/generation and it is converting it to upper case.
 * If you close the PDF select the "Render Page Borders" and regenerate follow by opening the PDF you'll notice the title is centered "between" the borders.  This was all calculated automatically for you.
 
@@ -50,11 +50,14 @@ Creating a Set of Stamps
 In this tutorial we will add to the current file and add another page that contains a set of four stamps and a souvenir sheet.  
 
 To begin switch back to the text editor
+
 1. Add a new page similiar to what you did previously directly after the &lt;/page&gt; tag pair on a new line.  Set the name to "Japan"
 2. Write the closing page tag &lt;/page&gt; on a new line and add a blank line between them. 
 
-*HINT* 
-_This is a good practice.  Create your start and ending tags first then fill in the content.  Also try and use TABs to indent your document at each level of the structure.  It makes it easier to read._
+
+<b>HINT</b>
+
+<i>This is a good practice.  Create your start and ending tags first then fill in the content.  Also try and use TABs to indent your document at each level of the structure.  It makes it easier to read.</i>
 
 Now we are going to create a set of stamps.  The &lt;set&gt; are the children (one of) a &lt;page&gt; element.  Sets have a series of optional attributes and children elements that we will define in this step.
 
@@ -98,11 +101,11 @@ Lets add three boxes to the stamp-row as follows:
 
 The first stamp in this case is measuring 37mm x 26mm and has the color "Bluish Violet and Reddish Purple".  If the text is too wide to fit in the box it will attempt to wrap it.  For this reason the escape character \n might be used to provide a cleaner formatting.
 
-7. Save the file and switch back to the Album Generator Tool and hit Generate (_make sure the PDF is not open_).  Open the PDF if successful and look at the output.  You should see something like this:
+7. Save the file and switch back to the Album Generator Tool and hit Generate (<i>make sure the PDF is not open</i>).  Open the PDF if successful and look at the output.  You should see something like this:
 
 <img src="images/Japan-firstrow.png" width="500px"></img>
 
-8. Lets now add another row and a stamp.  You could add the stamp in the current row and generate it ((_make sure the PDF is not open_), but what you'll find is that it is straddling the margins (if you click the "Render Borders" you'll see what I mean).  So we'll add another row and place the stamp.  
+8. Lets now add another row and a stamp.  You could add the stamp in the current row and generate it (<i>make sure the PDF is not open</i>), but what you'll find is that it is straddling the margins (if you click the "Render Borders" you'll see what I mean).  So we'll add another row and place the stamp.  
 
 _NOTE_ One nice aspect to the XML approach is it is easy to move stamps between rows.... cut and paste!  One trick is to add all your stamps to one row and then and additional rows and move the stamps down to create the layout you want.
 
@@ -137,7 +140,7 @@ This should result in a page layout like the following:
 	</page>
 ```
 
-Generate this page to see the completed page (_make sure the PDF is not open_).  
+Generate this page to see the completed page (<i>make sure the PDF is not open</i>).  
 
 Congratulations!  You have just created your first actual album page complete with spaces for 4 stamps, a souvenir sheet all in 3 rows.
 
