@@ -7,6 +7,7 @@ Before You Begin
 ----------------
 
 * Download and Execute the stamp-pagegen tool from [www.drakeserver.com](http://www.drakeserver.com www.drakeserver.com) to ensure there are no issues running the tool.  Depending on your operating system a desktop icon/application group may be installed you can use for further access of the tool.
+* You may also want to install the fonts listed on the website for the tool.
 * Download the starter-template.xml and tutorial-complete.xml from the list above.  (you can also get them by clicking the "Download ZIP" on the right side.  (If using the ZIP file expand it using a tool from your computer (Windows can open the file in explorer) and copy the contents to a directory on your disk.
 * Open the Stamp Album Generator (stamp-pagegen) tool and leave this open.  Set the Configuration drop-down to "Letter Standard (8.5" x 11.0")"
 * Open a text or xml editor [XML Copy Editor](http://xml-copy-editor.sourceforge.net/) works well for many (you may want to choose/configure a less annoying font - go to Tools->Options menu and select "Editor" tab and change the "Font" value.
@@ -140,29 +141,90 @@ Generate this page to see the completed page.
 Congratulations!  You have just created your first actual album page complete with spaces for 4 stamps, a souvenir sheet all in 3 rows.
 
 
+
 Creating Multiple Sets on a single line
 ---------------------------------------
 
 _In this tutorial you will create a page that contains two stamp sets on a single line centered on the page._
+
 _Coming soon_ - check out the [DTD](http://www.drakeserver.com/dtds/pagegen.dtd) and the tutorial-complete.xml file in your text editor for the solution.
+
+```XML
+	<page title="Japan">
+        <column-set issue="1958" spacing="low">
+            <set description="Opening of Kan-Mon Undersea Tunnel">
+                <row-set>
+                    <s>"44 26" "10y" "Pink, Blue and Drab" "(Kan-Mon Tunnel)" "645 (775)"</s>
+                </row-set>
+            </set>
+            <set description="Centenary of Opening of Ports to Traders">
+                <row-set>
+                    <s>"37 26" "10y" "Carmine and Deep Turquoise-Blue" "(Statue of Li Naosuke)" "647 (777)"</s>
+                </row-set>
+            </set>
+        </column-set>
+	</page>
+```
+
 
 
 Creating Back-of-the-Book stamps with diamond shaped stamps
 -----------------------------------------------------------
 
 _In this tutorial you will create a page for Semi-Postal stamps of Japan and define stamps that are diamonds._
+
 _Coming soon_ - check out the [DTD](http://www.drakeserver.com/dtds/pagegen.dtd) and the tutorial-complete.xml file in your text editor for the solution.
+
+```XML
+	<page title="Japan" classifier="Semi-postal Stamps">
+        <set issue="1961" description="Tokyo Olympic Games">
+            <row-set description="First Issue">
+                <s shape="diamond">"42 42" "5y + 5y" "Yellow-Brown" "(Throwing Javelin)" "B12 (879)"</s>
+                <s shape="diamond">"42 42" "5y + 5y" "Deep Green" "(Wresting)" "B13 (880)"</s>
+                <s shape="diamond">"42 42" "5y + 5y" "Carmine" "(Woman Diver)" "B14 (881)"</s>
+            </row-set>
+        </set>
+	</page>
+```
+
 
 
 Creating a Set-Tentant Pair of stamps
 -------------------------------------
 
 _In this tutorial you will create a set of stamps made up of a set-tenant pair._
+
 _Coming soon_ - check out the [DTD](http://www.drakeserver.com/dtds/pagegen.dtd) and the tutorial-complete.xml file in your text editor for the solution.
+
+```XML
+	<page title="Australia">
+		<column-set>
+			<set issue="1947-52" description="Marriage of Queen Elizabeth II\nPerforated 14x15">
+				<row-set description="Coil Pair">
+					<set-tenant orientation="horizontal">
+						<s>"24 20" "1d" "Purple" "" "222b"</s>
+						<s>"24 20" "1d" "Purple" "" "222b"</s>
+					</set-tenant>
+				</row-set>
+			</set>
+		</column-set>
+	</page>
+```
+
 
 
 Creating a Title Page with a content list
 -----------------------------------------
 
 _In this tutorial you will create a title page that contains a list of the contents in the album_
+
 _Coming soon_ - check out the [DTD](http://www.drakeserver.com/dtds/pagegen.dtd) and the tutorial-complete.xml file in your text editor for the solution.
+
+```XML
+	<title-page title="My Collection" description="Optionally describe the area">
+		<content-items>
+			<item>Listing of album sections</item>
+			<item>Imperial Japan (1867-1947)</item>
+		</content-items>
+	</title-page>
+```
